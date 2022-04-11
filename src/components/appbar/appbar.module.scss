@@ -1,0 +1,33 @@
+@import "src/_variables.scss";
+
+.container{
+  // background: $color;
+}
+
+.navigation{
+  list-style-type: none;
+}
+
+.navigationItem{
+
+}
+@media screen and (min-width: $xs-breakpoint){
+  .container{
+    background: blue;
+  }
+  .navigationItem{
+    display: inline-block;
+  }
+}
+
+ul{
+  list-style-type: none;
+}
+
+
+
+// .subMenu{
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+// }

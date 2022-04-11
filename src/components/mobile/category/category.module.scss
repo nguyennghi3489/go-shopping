@@ -1,0 +1,21 @@
+.category{
+  font-size: 1.2rem;
+}
+
+.subCateogry{
+    font-size: 0.9em;
+    font-weight:normal;
+    margin-left: 8px;
+    & .menuItem{
+      font-weight:normal;
+    }
+}
+
+.categoryItem{
+  font-weight:500;
+  position: relative;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

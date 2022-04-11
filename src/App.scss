@@ -1,3 +1,15 @@
+:root {
+  --xs-breakpoint: 481;
+  --sm-breakpoint: 769;
+  --md-breakpoint: 1025;
+  --lg-breakpoint: 1201;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
 }
