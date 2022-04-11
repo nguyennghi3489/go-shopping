@@ -1,21 +1,27 @@
-.category{
-  font-size: 1.2rem;
+@import "src/_variables.scss";
+
+.category {
+    font-size: 1rem;
 }
 
-.subCateogry{
-    font-size: 0.9em;
-    font-weight:normal;
-    margin-left: 8px;
-    & .menuItem{
-      font-weight:normal;
+.subCateogry {
+    font-size: 0.95em;
+    font-weight: normal;
+    margin-left: $spacingS;
+    & .menuItem {
+        font-weight: normal;
     }
 }
 
-.categoryItem{
-  font-weight:500;
-  position: relative;
-  padding: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.categoryItem {
+    font-weight: 500;
+    position: relative;
+    padding: $spacingS;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    & .categoryItemLabel {
+        color: $colorDark1;
+        font-weight: 600;
+    }
 }

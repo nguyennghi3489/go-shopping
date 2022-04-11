@@ -1,0 +1,54 @@
+@import "src/_variables.scss";
+
+$menuItemWidth: 150px;
+
+.category {
+    font-size: 1rem;
+    display: flex;
+    & > .categoryItem > .subCateogry {
+        top: 35px;
+        left: 0;
+    }
+    & .categoryItemLabel {
+        color: $colorDark1;
+        font-weight: 600;
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+}
+
+.subCateogry {
+    display: none;
+    position: absolute;
+    font-size: 0.95em;
+    font-weight: normal;
+    margin-left: $spacingS;
+    min-width: $menuItemWidth;
+    & .menuItem {
+        font-weight: normal;
+    }
+
+    & .subCateogry {
+        margin-left: 0;
+        left: 100%;
+        top: 0;
+    }
+}
+
+.categoryItem {
+    position: relative;
+    font-weight: 500;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $colorDark1;
+    &:hover > .subCateogry {
+        display: block;
+    }
+
+    &:hover > .categoryItemLabel {
+        color: $colorYellow2;
+    }
+}

@@ -1,0 +1,26 @@
+@import "src/_variables.scss";
+
+.bottomBar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    right: 0;
+    box-shadow: 1px -1px 5px #ddd;
+}
+.bottomItem {
+    flex: 1;
+    text-align: center;
+    padding: $spacing 0;
+    position: relative;
+}
+.active {
+    background: $colorYellow2;
+    padding: $spacing;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -$spacing;
+    border-radius: $spacing;
+    box-shadow: 1px -1px 5px #ddd;
+}

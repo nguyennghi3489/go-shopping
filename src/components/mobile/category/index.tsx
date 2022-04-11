@@ -1,4 +1,5 @@
 import { ArrowDropDown, ArrowRight } from "@mui/icons-material";
+import { Button } from "@mui/material";
 import { useState } from "react";
 import styles from "./category.module.scss";
 
@@ -71,7 +72,9 @@ const CategoryItem = ({ item }: CategoryItemProps) => {
     return (
         <li>
             <div className={styles.categoryItem}>
-                <a>{item.label}</a>
+                <Button variant="text" className={styles.categoryItemLabel}>
+                    {item.label}
+                </Button>
                 <MenuItemActions
                     hasChildren={!!item.children}
                     isOpen={isOpen}
