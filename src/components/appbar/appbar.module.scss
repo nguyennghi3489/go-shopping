@@ -1,7 +1,8 @@
 @import "src/_variables.scss";
 
 .container {
-    // background: $color;
+    max-width: 1280px;
+    margin: 16px auto;
 }
 
 .navigation {

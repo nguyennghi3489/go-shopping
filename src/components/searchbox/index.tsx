@@ -1,12 +1,30 @@
 import { Search } from "@mui/icons-material";
-import { OutlinedInput } from "@mui/material";
-import styles from "./searchbox.module.css";
+import { ChangeEvent, useState } from "react";
+import styles from "./searchbox.module.scss";
 
-export const SearchBox = () => {
+interface SearchBoxProps {
+    onSearch: (value: string) => void;
+    initialValue?: string;
+}
+export const SearchBox = ({ onSearch, initialValue }: SearchBoxProps) => {
+    const [value, setValue] = useState(initialValue || "");
+    const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
+        setValue(event.target.value);
+    };
+    const handleSearch = () => {
+        onSearch(value);
+    };
+
     return (
-        <OutlinedInput
-            className={styles.searchField}
-            endAdornment={<Search />}
-        />
+        <div className={styles.searchBox}>
+            <input
+                className={styles.searchField}
+                type="text"
+                placeholder="Search..."
+                value={value}
+                onChange={handleChange}
+            />
+            <Search onClick={handleSearch} />
+        </div>
     );
 };

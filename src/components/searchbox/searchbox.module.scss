@@ -1,0 +1,15 @@
+@import "src/_variables.scss";
+
+.searchBox {
+    border: 1px solid $colorGray;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: $spacingXS $spacingS;
+    & .searchField {
+        outline: 0;
+        border: 0;
+        box-sizing: border-box;
+        background: none;
+    }
+}
