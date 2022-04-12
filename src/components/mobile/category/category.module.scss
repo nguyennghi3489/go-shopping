@@ -2,12 +2,14 @@
 
 .category {
     font-size: 1rem;
+    list-style-type: none;
 }
 
 .subCateogry {
     font-size: 0.95em;
     font-weight: normal;
     margin-left: $spacingS;
+    list-style-type: none;
     & .menuItem {
         font-weight: normal;
     }
