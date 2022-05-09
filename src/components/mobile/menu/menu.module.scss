@@ -1,0 +1,19 @@
+@import "src/_variables.scss";
+
+.menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    box-sizing: border-box;
+    transition: 0.25s ease-in-out;
+    background: $colorGray;
+    padding: $spacing;
+}
+
+.actionBar {
+    display: flex;
+    justify-items: flex-end;
+    justify-content: flex-end;
+}

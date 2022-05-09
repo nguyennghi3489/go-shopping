@@ -38,7 +38,7 @@ export const TopBar = () => {
                         }}
                     />
                 </div>
-                {isOn && <Menu />}
+                {<Menu isOpen={isOn} toggle={toggle} />}
             </Hidden>
         </div>
     );
