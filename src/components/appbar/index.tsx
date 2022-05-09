@@ -33,18 +33,18 @@ export const AppBar = () => {
     return (
         <div className={styles.container}>
             <TopBar />
-            <Hidden smDown>
+            {/* <Hidden smDown>
                 <WebCategory items={data} />
             </Hidden>
             <Hidden smUp>
                 <Category items={data} />
                 <BottomBar />
-            </Hidden>
-            <Carousel>
+            </Hidden> */}
+            {/* <Carousel>
                 {items.map((item, i) => (
                     <Item key={i} item={item} />
                 ))}
-            </Carousel>
+            </Carousel> */}
         </div>
     );
 };

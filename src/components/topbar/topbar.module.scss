@@ -4,6 +4,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media screen and (max-width: $xs-breakpoint) {
+        padding: $spacing;
+    }
 }
 
 .menu {
