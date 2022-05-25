@@ -1,4 +1,4 @@
-import { Product as ProductModel } from "../../models/product";
+import { Product as ProductModel } from "../../../models/product";
 import { Product } from "../product";
 import styles from "./product-list.module.scss";
 

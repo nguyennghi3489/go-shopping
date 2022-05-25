@@ -1,5 +1,5 @@
 import "./App.scss";
-import { AppBar } from "./components/appbar";
+import { AppBar } from "./components/universal/appbar";
 
 function App() {
     return (

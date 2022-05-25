@@ -1,4 +1,4 @@
-import { Product as ProductModel } from "../../models/product";
+import { Product as ProductModel } from "../../../models/product";
 import styles from "./product.module.scss";
 
 interface Props {

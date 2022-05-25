@@ -1,4 +1,4 @@
-import { ProductList } from "../components/product-list";
+import { ProductList } from "../components/universal/product-list";
 import { productsData } from "../data/products";
 
 function Home() {

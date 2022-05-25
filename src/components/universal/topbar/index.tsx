@@ -1,13 +1,11 @@
-import { useState } from "react";
 import { Apple as AppleIcon, Menu as MenuIcon } from "@mui/icons-material";
 import { Box, Hidden } from "@mui/material";
-import { data } from "../../data/menu";
-import { Category } from "../mobile/category";
-import { Category as WebCategory } from "../web/category";
+import { Category as WebCategory } from "../../web/category";
 import { SearchBox } from "../searchbox";
 import styles from "./topbar.module.scss";
-import { Menu } from "../mobile/menu";
-import { useToogle } from "../../hooks/useToggle";
+import { useToogle } from "../../../hooks/useToggle";
+import { Menu } from "../../mobile/menu";
+import { data } from "../../../data/menu";
 
 export const TopBar = () => {
     const { toggle, isOn } = useToogle();
