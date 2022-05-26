@@ -8,11 +8,11 @@
 .items {
     display: flex;
     transition: all 0.5s ease;
-    position: absolute;
     width: 100%;
 }
 .item {
     min-width: 100%;
+    width: 100%;
 }
 
 .midControls {
@@ -20,12 +20,15 @@
     width: 100%;
     top: 50%;
     transform: translateY(-50%);
-    .leftControl {
+    .leftControl,
+    .rightControl {
         position: absolute;
+        cursor: pointer;
+    }
+    .leftControl {
         left: $spacing;
     }
     .rightControl {
-        position: absolute;
         transform: rotate(180deg);
         right: $spacing;
     }

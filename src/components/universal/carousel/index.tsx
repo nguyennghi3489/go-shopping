@@ -1,5 +1,7 @@
 import React, { ReactElement, ReactNode, useState } from "react";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
+import CircleIcon from "@mui/icons-material/Circle";
+import CircleOutlinedIcon from "@mui/icons-material/CircleOutlined";
 import styles from "./carousel.module.scss";
 
 interface CarouselItemProps {
@@ -57,14 +59,20 @@ export const Carousel = ({ children }: Props) => {
             <div className={styles.controls}>
                 {Array(childrenNumber)
                     .fill(0)
-                    .map((_, index) => (
-                        <span
-                            onClick={() => handleChange(index)}
-                            className={index === positionX ? styles.active : ""}
-                        >
-                            {index + 1}
-                        </span>
-                    ))}
+                    .map((_, index) => {
+                        return index === positionX ? (
+                            <CircleIcon
+                                color="action"
+                                fontSize="small"
+                                onClick={() => handleChange(index)}
+                            />
+                        ) : (
+                            <CircleOutlinedIcon
+                                fontSize="small"
+                                onClick={() => handleChange(index)}
+                            />
+                        );
+                    })}
             </div>
         </div>
     );

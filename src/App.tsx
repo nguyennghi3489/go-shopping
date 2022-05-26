@@ -8,9 +8,15 @@ function App() {
             <header>
                 <AppBar />
                 <Carousel>
-                    <CarouselItem>Hello world 1</CarouselItem>
-                    <CarouselItem>Hello world 2</CarouselItem>
-                    <CarouselItem>Hello world 3</CarouselItem>
+                    <CarouselItem>
+                        <img src={"/images/product2.jpg"} height={500} />
+                    </CarouselItem>
+                    <CarouselItem>
+                        <img src={"/images/product1.jpg"} height={500} />
+                    </CarouselItem>
+                    <CarouselItem>
+                        <img src={"/images/product3.jpg"} height={500} />
+                    </CarouselItem>
                 </Carousel>
             </header>
         </div>
