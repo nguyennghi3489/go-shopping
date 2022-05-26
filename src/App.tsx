@@ -9,13 +9,13 @@ function App() {
                 <AppBar />
                 <Carousel>
                     <CarouselItem>
-                        <img src={"/images/product2.jpg"} height={500} />
+                        <div>Carousel 1</div>
                     </CarouselItem>
                     <CarouselItem>
-                        <img src={"/images/product1.jpg"} height={500} />
+                        <div>Carousel 2</div>
                     </CarouselItem>
                     <CarouselItem>
-                        <img src={"/images/product3.jpg"} height={500} />
+                        <div>Carousel 3</div>
                     </CarouselItem>
                 </Carousel>
             </header>
