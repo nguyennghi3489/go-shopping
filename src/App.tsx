@@ -8,9 +8,9 @@ function App() {
             <header>
                 <AppBar />
                 <Carousel>
-                    <CarouselItem>Hello world</CarouselItem>
-                    <CarouselItem>Hello world</CarouselItem>
-                    <CarouselItem>Hello world</CarouselItem>
+                    <CarouselItem>Hello world 1</CarouselItem>
+                    <CarouselItem>Hello world 2</CarouselItem>
+                    <CarouselItem>Hello world 3</CarouselItem>
                 </Carousel>
             </header>
         </div>
