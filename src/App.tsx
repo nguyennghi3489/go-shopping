@@ -1,12 +1,17 @@
 import "./App.scss";
 import { AppBar } from "./components/universal/appbar";
+import { Carousel, CarouselItem } from "./components/universal/carousel";
 
 function App() {
     return (
         <div className="App">
             <header>
-                {/* <img src={logo} className="App-logo" alt="logo" /> */}
                 <AppBar />
+                <Carousel>
+                    <CarouselItem>Hello world</CarouselItem>
+                    <CarouselItem>Hello world</CarouselItem>
+                    <CarouselItem>Hello world</CarouselItem>
+                </Carousel>
             </header>
         </div>
     );
