@@ -1,6 +1,7 @@
 import "./App.scss";
 import { AppBar } from "./components/universal/appbar";
 import { Carousel, CarouselItem } from "./components/universal/carousel";
+import { CompanyValues } from "./components/universal/company-values";
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
                         <div>Carousel 3</div>
                     </CarouselItem>
                 </Carousel>
+                <CompanyValues />
             </header>
         </div>
     );
