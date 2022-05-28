@@ -1,0 +1,50 @@
+@import "src/_variables.scss";
+
+.logoAndRegister {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: $spacingL;
+    width: 100%;
+    padding: $spacing;
+    box-sizing: border-box;
+    @media screen and (min-width: $xs-breakpoint) {
+        flex-direction: row;
+    }
+}
+.register {
+    width: 100%;
+    @media screen and (min-width: $xs-breakpoint) {
+        display: flex;
+        align-items: center;
+        width: auto;
+    }
+}
+.registerInput {
+    width: 100%;
+    margin-bottom: $spacingS;
+    @media screen and (min-width: $xs-breakpoint) {
+        margin-right: $spacingS;
+        width: 300px;
+        margin-bottom: 0;
+    }
+}
+
+.socialsAndCopyright {
+    background-color: $colorGray1;
+    margin-top: $spacingS;
+    padding: $spacing;
+    @media screen and (min-width: $xs-breakpoint) {
+        flex-direction: row;
+        justify-content: space-between;
+        display: flex;
+    }
+}
+
+.socials {
+    margin-bottom: $spacingS;
+    @media screen and (min-width: $xs-breakpoint) {
+        margin-bottom: 0;
+    }
+}

@@ -10,7 +10,7 @@ function App() {
         <div className="App">
             <header>
                 <AppBar />
-                {/* <Carousel>
+                <Carousel>
                     <CarouselItem>
                         <div>Carousel 1</div>
                     </CarouselItem>
@@ -22,7 +22,7 @@ function App() {
                     </CarouselItem>
                 </Carousel>
                 <CompanyValues />
-                <Tabs /> */}
+                <Tabs />
                 <Footer />
             </header>
         </div>
