@@ -2,6 +2,7 @@ import "./App.scss";
 import { AppBar } from "./components/universal/appbar";
 import { Carousel, CarouselItem } from "./components/universal/carousel";
 import { CompanyValues } from "./components/universal/company-values";
+import { Footer } from "./components/universal/footer";
 import { Tabs } from "./components/universal/tabs";
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
         <div className="App">
             <header>
                 <AppBar />
-                <Carousel>
+                {/* <Carousel>
                     <CarouselItem>
                         <div>Carousel 1</div>
                     </CarouselItem>
@@ -21,7 +22,8 @@ function App() {
                     </CarouselItem>
                 </Carousel>
                 <CompanyValues />
-                <Tabs />
+                <Tabs /> */}
+                <Footer />
             </header>
         </div>
     );
