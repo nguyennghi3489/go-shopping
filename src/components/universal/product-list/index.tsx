@@ -1,3 +1,4 @@
+import { ReactElement } from "react";
 import { Product as ProductModel } from "../../../models/product";
 import { Product } from "../product";
 import styles from "./product-list.module.scss";
@@ -6,7 +7,7 @@ interface Props {
     products: ProductModel[];
 }
 
-export const ProductList = ({ products }: Props) => {
+export const ProductList = ({ products }: Props): ReactElement => {
     return (
         <div className={styles.container}>
             {products.map((item: ProductModel) => (

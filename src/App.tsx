@@ -2,6 +2,7 @@ import "./App.scss";
 import { AppBar } from "./components/universal/appbar";
 import { Carousel, CarouselItem } from "./components/universal/carousel";
 import { CompanyValues } from "./components/universal/company-values";
+import { Tabs } from "./components/universal/tabs";
 
 function App() {
     return (
@@ -20,6 +21,7 @@ function App() {
                     </CarouselItem>
                 </Carousel>
                 <CompanyValues />
+                <Tabs />
             </header>
         </div>
     );

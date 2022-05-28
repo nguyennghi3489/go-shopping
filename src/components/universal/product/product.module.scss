@@ -18,6 +18,7 @@
     justify-content: center;
     flex-direction: column;
     height: 200px;
+    overflow: hidden;
 }
 
 .infoWrapper {
@@ -25,7 +26,7 @@
 }
 
 .image {
-    width: 100%;
+    object-fit: contain;
 }
 
 .title {

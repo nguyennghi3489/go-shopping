@@ -1,7 +1,6 @@
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import { ImagePlaceHolder } from "../image-placeholder";
-import styles from "./company-values.module.scss";
 import { Container } from "../container";
 
 export const CompanyValues = () => {
