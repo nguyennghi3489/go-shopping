@@ -22,3 +22,10 @@ $fullPageSize: 1200px;
 
 $fontSize: 1em;
 $fontSizeS: $fontSize * 7/8;
+
+$frontZIndex: 1000;
+$midZIndex: 500;
+$backZIndex: 1;
+
+//Make configurable
+$appBarBackgroundColor: white;

@@ -3,8 +3,12 @@
 $menuItemWidth: 150px;
 
 .category {
+    margin: $spacing 0;
     font-size: 1rem;
     display: flex;
+    background-color: $appBarBackgroundColor;
+    z-index: $frontZIndex;
+    padding-bottom: $spacing;
     & > .categoryItem > .subCateogry {
         top: 35px;
         left: 0;
@@ -25,6 +29,8 @@ $menuItemWidth: 150px;
     font-weight: normal;
     margin-left: $spacingS;
     min-width: $menuItemWidth;
+    background-color: $appBarBackgroundColor;
+    z-index: $frontZIndex;
     & .menuItem {
         font-weight: normal;
     }
@@ -44,6 +50,7 @@ $menuItemWidth: 150px;
     align-items: center;
     justify-content: space-between;
     color: $colorDark1;
+    padding: 0 $spacing 0 0;
     &:hover > .subCateogry {
         display: block;
     }

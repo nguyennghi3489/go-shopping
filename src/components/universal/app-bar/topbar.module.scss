@@ -1,5 +1,14 @@
 @import "src/_variables.scss";
 
+.container {
+    background-color: $appBarBackgroundColor;
+}
+
+.appBar {
+    max-width: $fullPageSize;
+    margin: 0 auto;
+}
+
 .topbar {
     display: flex;
     justify-content: space-between;

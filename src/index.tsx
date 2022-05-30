@@ -5,6 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
+import NexShopHome from "./pages/nexshop/home";
 
 ReactDOM.render(
     <React.StrictMode>
@@ -12,6 +13,7 @@ ReactDOM.render(
             <Routes>
                 <Route path="/app" element={<App />} />
                 <Route path="/" element={<Home />} />
+                <Route path="/nexshop" element={<NexShopHome />} />
             </Routes>
         </BrowserRouter>
     </React.StrictMode>,
