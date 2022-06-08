@@ -25,4 +25,17 @@ export const productsData = [
         price: "5,890,000 VNĐ",
         oldPrice: "9,890,000 VNĐ",
     },
+    {
+        id: "5",
+        imgSrc: "/images/product1.jpg",
+        title: "Tai nghe không dây chống ồn Sony WF-1000XM4 | Bạc",
+        price: "4,850,000 VNĐ",
+        oldPrice: "6,490,000 VNĐ",
+    },
+    {
+        id: "6",
+        imgSrc: "/images/product2.jpg",
+        title: "Microphone không dây ECM-W2BT chính hãng SonyVN",
+        price: "5,190,000 VNĐ",
+    },
 ];

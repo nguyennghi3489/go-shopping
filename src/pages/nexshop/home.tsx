@@ -1,6 +1,8 @@
 import { Carousel, CarouselItem } from "../../components/universal/carousel";
 import { AppBar } from "../../components/universal/app-bar";
 import styles from "./home.module.scss";
+import { ProductList } from "../../components/universal/product-list";
+import { productsData } from "../../data/products";
 
 const Logo = () => {
     return <img src="/nexshop/images/logo.jpg" width={250} alt="logo" />;
@@ -33,6 +35,7 @@ const Home = () => {
                     />
                 </CarouselItem>
             </Carousel>
+            <ProductList products={productsData} productInRow={6} />
         </div>
     );
 };

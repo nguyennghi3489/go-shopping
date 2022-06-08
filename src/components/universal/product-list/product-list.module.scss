@@ -1,20 +1,15 @@
 @import "src/_variables.scss";
 
 .container {
-    display: flex;
-    flex: 1;
-    gap: $spacing;
+    display: grid;
+    gap: $spacingS;
     flex-wrap: wrap;
-    @media screen and (min-width: $xs-breakpoint) {
-        flex-wrap: nowrap;
+    @media screen and (max-width: $xs-breakpoint) {
+        grid-template-columns: repeat(2, 1fr) !important;
     }
 }
 
 .productItem {
-    min-width: 100%;
+    box-sizing: border-box;
     display: flex;
-    @media screen and (min-width: $xs-breakpoint) {
-        min-width: 25%;
-        width: 25%;
-    }
 }
