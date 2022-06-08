@@ -1,9 +1,9 @@
-import { Apple as AppleIcon } from "@mui/icons-material";
 import { Carousel, CarouselItem } from "../../components/universal/carousel";
 import { AppBar } from "../../components/universal/app-bar";
+import styles from "./home.module.scss";
 
 const Logo = () => {
-    return <img src="/nexshop/images/logo.jpg" width={250} />;
+    return <img src="/nexshop/images/logo.jpg" width={250} alt="logo" />;
 };
 
 const Home = () => {
@@ -12,13 +12,25 @@ const Home = () => {
             <AppBar logo={<Logo />} />
             <Carousel>
                 <CarouselItem>
-                    <div>Carousel 1</div>
+                    <img
+                        className={styles.promoImage}
+                        src="/nexshop/images/promo1.png"
+                        alt="promo1"
+                    />
                 </CarouselItem>
                 <CarouselItem>
-                    <div>Carousel 2</div>
+                    <img
+                        className={styles.promoImage}
+                        src="/nexshop/images/promo2.png"
+                        alt="promo2"
+                    />
                 </CarouselItem>
                 <CarouselItem>
-                    <div>Carousel 3</div>
+                    <img
+                        className={styles.promoImage}
+                        src="/nexshop/images/promo3.png"
+                        alt="promo3"
+                    />
                 </CarouselItem>
             </Carousel>
         </div>
