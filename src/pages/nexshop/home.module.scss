@@ -5,3 +5,8 @@
     max-height: 400px;
     object-fit: contain;
 }
+
+.container {
+    max-width: $fullPageSize;
+    margin: 0 auto;
+}

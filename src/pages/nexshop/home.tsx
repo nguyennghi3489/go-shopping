@@ -12,30 +12,47 @@ const Home = () => {
     return (
         <div>
             <AppBar logo={<Logo />} />
-            <Carousel>
-                <CarouselItem>
-                    <img
-                        className={styles.promoImage}
-                        src="/nexshop/images/promo1.png"
-                        alt="promo1"
-                    />
-                </CarouselItem>
-                <CarouselItem>
-                    <img
-                        className={styles.promoImage}
-                        src="/nexshop/images/promo2.png"
-                        alt="promo2"
-                    />
-                </CarouselItem>
-                <CarouselItem>
-                    <img
-                        className={styles.promoImage}
-                        src="/nexshop/images/promo3.png"
-                        alt="promo3"
-                    />
-                </CarouselItem>
-            </Carousel>
-            <ProductList products={productsData} productInRow={6} />
+            <div className={styles.container}>
+                <Carousel>
+                    <CarouselItem>
+                        <img
+                            className={styles.promoImage}
+                            src="/nexshop/images/promo1.png"
+                            alt="promo1"
+                        />
+                    </CarouselItem>
+                    <CarouselItem>
+                        <img
+                            className={styles.promoImage}
+                            src="/nexshop/images/promo2.png"
+                            alt="promo2"
+                        />
+                    </CarouselItem>
+                    <CarouselItem>
+                        <img
+                            className={styles.promoImage}
+                            src="/nexshop/images/promo3.png"
+                            alt="promo3"
+                        />
+                    </CarouselItem>
+                </Carousel>
+            </div>
+
+            <div className={styles.container}>
+                <br />
+                <br />
+                <h3>New Arrival</h3>
+                <br />
+                <ProductList products={productsData} productInRow={6} />
+            </div>
+
+            <div className={styles.container}>
+                <br />
+                <br />
+                <h3>Best Seller</h3>
+                <br />
+                <ProductList products={productsData} productInRow={6} />
+            </div>
         </div>
     );
 };
